@@ -1,0 +1,62 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.thankyou {
+  font-family: 'Inter', sans-serif;
+  background: url(https://www.iitg.ac.in/sail/static/media/banner_img.a1a27958329615f787eb.jpeg) lightgray 0px -75px / 100% 114.94% no-repeat;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #2c3e50;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Message */
+.thankyou p {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #34495e;
+  text-align: center;
+}
+
+/* Button styling */
+.thankyou button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.thankyou-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgba(237,239,241,0.6);
+  border-radius: 12px;
+}

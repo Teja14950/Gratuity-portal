@@ -1,0 +1,159 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.testimonial{
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(0deg, rgba(155, 155, 155, 0.26) 0%, rgba(255,255 ,255 , 0.00) 100%),
+    url(https://www.iitg.ac.in/sail/static/media/banner_img.a1a27958329615f787eb.jpeg) lightgray 0px -75px / 100% 114.94% no-repeat;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #2c3e50;
+}
+
+.testimonial-wrapper{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(237,239,241,0.8);
+  border-radius: 12px;
+  margin-top: 100px;
+  padding: 20px 40px;
+  width: 55%;
+}
+
+.testimonial-container {
+  border-radius: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  width:100%;
+  padding-top: 10px;
+}
+
+
+
+/* Header */
+header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline;
+  color: #34495e;
+}
+
+/* Professor name */
+#prof-name, #prof-name-1 {
+  font-weight: 600;
+  color: #34495e;
+  font-size: 1.8rem;
+  display: inline;
+  margin: 0;
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #34495e;
+  border-radius: 10px;
+  outline: none;
+  resize:vertical;
+  background-color: #ffffffcc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: border 0.3s ease;
+  font-family: "DM Sans";
+}
+
+textarea::placeholder {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+textarea:focus {
+  border-color: #08b5ff;
+}
+
+/* Submit button */
+.testimonial button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.03);
+}
+
+/* Grid for prof cards */
+.professor-container {
+  border-radius: 12px;
+  gap:5px;
+  width:min-content;
+}
+
+.vl{
+  width:3px;
+  background-color: #34495e;
+  height: 200px;
+}
+
+@media (max-width:768px) {
+  .vl{
+    width:0px;
+    height:0px;
+  }
+  .testimonial-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:0px;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
+  .professor-container{
+    text-align: center;
+    margin-bottom: 10px;
+    width:70%;
+  }
+  header{
+    display:block;
+    font-size: 1.5rem;
+  }
+  #prof-name{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px){
+  header{
+    font-size: 1.2rem;
+  }
+  #prof-name{
+    font-size: 1.2rem;
+  }
+  .testimonial-wrapper{
+    width:80%;
+  }
+}
